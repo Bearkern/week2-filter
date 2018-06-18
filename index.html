@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW" ng-app="todoListApp">
+
+<head>
+    <title>Week 2 - Filter</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+    <!-- load bootstrap and fontawesome via CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- load JavaScript -->
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-bg justify-content-around">
+            <h1>
+                <a class="navbar-brand">HaveFun</a>
+            </h1>
+            <form class="form-inline">
+                <i class="fas fa-search"></i>
+                <input class="search-input" type="search" placeholder="Explore your own activities">
+            </form>
+        </nav>
+        <div class="row">
+            <div class="col-4 search-area">
+                <ul class="search-condition">
+                    <li>
+                        <h5>Location</h5>
+                        <select id="location">
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Japan">Japan</option>
+                            <option value="HongKong">HongKong</option>
+                        </select>
+                    </li>
+                    <li>
+                        <h5>Date</h5>
+                        <label for="dateFrom">from</label>
+                        <input type="date" id="dateFrom"><br>
+                        <label for="dateTo">to</label>
+                        <input type="date" id="dateTo">
+                    </li>
+                    <li>
+                        <h5>Categories</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="category1">
+                            <label class="category-label" for="category1">
+                                All
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="category2">
+                            <label class="category-label" for="category2">
+                                Entertainment
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="category3">
+                            <label class="category-label" for="category3">
+                                Food
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="category4">
+                            <label class="category-label" for="category4">
+                                Learning
+                            </label>
+                            <input class="form-check-input" type="checkbox" id="category5">
+                            <label class="category-label" for="category5">
+                                Outdoors
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-8 search-results">
+                <p class="show-results">Showing <span>15</span> results by…</p>
+                <label for="" class="label">Kaohsiung <i class="far fa-times-circle"></i></label>
+                <label for="" class="label">Entertainment <i class="far fa-times-circle"></i></label>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
